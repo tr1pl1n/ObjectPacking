@@ -100,19 +100,8 @@
     .weekhead{display:flex; justify-content:space-between; gap:10px; margin-bottom:8px}
     .weektitle{font-weight:700}
     .weekrange{color:var(--muted); font-size:12px}
-    textarea{
-      width:100%;
-      min-height:110px;
-      resize:vertical;
-      border:1px solid var(--border);
-      border-radius:6px;
-      padding:10px;
-      font-family:var(--sans);
-      color:var(--text);
-      background:#fff;
-      outline:none;
-    }
-    textarea:focus{border-color:#93c5fd; box-shadow:0 0 0 3px rgba(59,130,246,.12)}
+    ul.weeklist{margin:0; padding-left:18px; color:var(--muted)}
+    ul.weeklist li{margin:6px 0}
 
     /* Buttons */
     .btnrow{display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 0}
@@ -170,7 +159,7 @@
           <p style="color:var(--text)">
             This bachelor thesis focuses on the simulation and synthetic data generation of object packing for computer vision and robotic learning applications. The primary objective is to develop a system capable of simulating the packing of 3D object models into various containers, such as boxes or sacks, while realistically modeling object interactions, deformations, and physical constraints. The system computes the packing simulation, generates corresponding surface textures and material properties for the containers, and renders high-quality synthetic images for use in neural network training. The generated dataset aims to support the development of vision-based algorithms for tasks such as object detection, segmentation, and pose estimation in cluttered or packed environments. This research contributes to the creation of scalable, controllable, and physically realistic synthetic datasets for advanced computer vision and robotic perception systems.
           </p>
-          <p><strong>Current scope:</strong> implementation focuses on <strong>deformable bags / flexible packaging</strong> in UE5 (Chaos Cloth).</p>
+          <p>Implementation focuses on <strong>deformable bags / flexible packaging</strong> in UE5 (Chaos Cloth).</p>
         </section>
 
         <section id="goal">
@@ -200,45 +189,53 @@
           <ul class="clean">
             <li>
               Kravar et al. 2023 — Novel Synthetic Data Tool for Data-Driven Cardboard Box Localization —
-              <a href="https://doi.org/10.48550/arXiv.2305.05215" target="_blank" rel="noopener">arXiv.org/abs/2305.05215</a>
+              <a href="https://doi.org/10.48550/arXiv.2305.05215" target="_blank" rel="noopener">10.48550/arXiv.2305.05215</a>
             </li>
             <li>
               Kleeberger 2019 — Large-scale 6D Object Pose Estimation Dataset for Industrial Bin-Picking (IROS 2019) —
-              <a href="https://arxiv.org/abs/1912.12125" target="_blank" rel="noopener">arxiv.org/abs/1912.12125</a>
+              <a href="https://paperswithcode.com/paper/large-scale-6d-object-pose-estimation-dataset" target="_blank" rel="noopener">paperswithcode link</a>
             </li>
             <li>
               Tsung-Yi Lin et al. 2014 — Microsoft COCO: Common Objects in Context —
-              <a href="https://doi.org/10.48550/arXiv.1405.0312" target="_blank" rel="noopener">arXiv.org/abs/1405.0312</a>
+              <a href="https://doi.org/10.48550/arXiv.1405.0312" target="_blank" rel="noopener">10.48550/arXiv.1405.0312</a>
             </li>
           </ul>
         </section>
 
         <section id="progress">
           <h2>Weekly progress</h2>
-          
 
-          <div class="week">
+          <div class="week" data-week="w1">
             <div class="weekhead">
               <div class="weektitle">Week 1</div>
               <div class="weekrange">09.03 — 15.03</div>
             </div>
-            <textarea data-key="w1" placeholder="Notes..."></textarea>
+            <ul class="weeklist" id="w1_list">
+              <li>Created the thesis project website</li>
+            </ul>
+            
           </div>
 
-          <div class="week">
+          <div class="week" data-week="w2">
             <div class="weekhead">
               <div class="weektitle">Week 2</div>
               <div class="weekrange">16.03 — 22.03</div>
             </div>
-            <textarea data-key="w2" placeholder="Notes..."></textarea>
+            <ul class="weeklist" id="w2_list">
+              <li>—</li>
+            </ul>
+            
           </div>
 
-          <div class="week">
+          <div class="week" data-week="w3">
             <div class="weekhead">
               <div class="weektitle">Week 3</div>
               <div class="weekrange">23.03 — 29.03</div>
             </div>
-            <textarea data-key="w3" placeholder="Notes..."></textarea>
+            <ul class="weeklist" id="w3_list">
+              <li>—</li>
+            </ul>
+            
           </div>
         </section>
       </main>
